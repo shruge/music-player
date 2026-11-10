@@ -1,0 +1,55 @@
+@use "sass:math";
+
+@function toRem($px) {
+    @return math.div($px, 16) + rem;
+}
+
+@mixin box ($val) {
+    width: $val;
+    height: $val;
+}
+
+@mixin maxWidth($w, $isCenter) {
+    @if $isCenter == 1 {
+        width: 100%;
+        max-width: $w;
+        margin: 0 auto;
+    }
+
+    @if $isCenter == 0 {
+        width: 100%;
+        max-width: $w;
+    }
+}
+
+@mixin pseudo ($w, $h) {
+    width: $w;
+    height: $h;
+    position: absolute;
+    display: inline-block;
+}
+
+@mixin flex ($prop) {
+    @if $prop == horizontal {
+        display: flex;
+        justify-content: center;
+    }
+
+    @if $prop == vertical {
+        display: flex;
+        align-items: center;
+    }
+
+    @if $prop == center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @if $prop == column {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

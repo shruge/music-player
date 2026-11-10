@@ -1,0 +1,56 @@
+@use '../../../styles/mixins' as *;
+
+.home-player {
+    text-align: center;
+    @include maxWidth(661px, 0);
+    margin: toRem(145) auto 0;
+
+    &__content {
+        width: 100%;
+        user-select: none;
+        margin: toRem(105) 0 0;
+        @include flex(column);
+    }
+
+    &__imgs {
+        position: relative;
+    }
+
+    &__img {
+        border-radius: 10px;
+        max-height: 320px;
+
+        &_blur {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            filter: blur(50px)
+        }
+    }
+
+    &__controls {
+        @include maxWidth(440px, 0);
+        margin: toRem(40) 0 toRem(65);
+        @include flex(vertical);
+        gap: toRem(5);
+        justify-content: space-between;
+    }
+
+    &__trackbar {
+        @include maxWidth(415px, 0);
+        @include flex(vertical);
+        gap: toRem(5);
+        justify-content: space-between;
+    }
+
+    &__btn {
+        &_play-pause {
+            @include maxWidth(91px, 0);
+            border-radius: 50%;
+            border: 2px solid #fff;
+            @include flex(center);
+            padding: toRem(31) 0 toRem(30) 0;
+        }
+    }
+}

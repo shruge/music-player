@@ -1,0 +1,20 @@
+<svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+	<path d="M2 0.5C2 0.22 1.78 0 1.5 0C1.21 0 1 0.22 1 0.5L1 3.5L2 3.5L2 0.5Z" fill="#B4B4B4" fillOpacity="1.000000" fillRule="evenodd"/>
+	<path d="M0.75 6.5L2.25 6.5" stroke="#B4B4B4" strokeOpacity="1.000000" strokeWidth="1.000000"/>
+	<path d="M1.5 3.5L0.75 3.5L2.25 3.5" stroke="#B4B4B4" strokeOpacity="1.000000" strokeWidth="1.000000"/>
+	<path d="M2 18.5L2 6.5L1 6.5L1 18.5C1 18.78 1.21 19 1.5 19C1.78 19 2 18.78 2 18.5Z" fill="#B4B4B4" fillOpacity="1.000000" fillRule="evenodd"/>
+	<circle cx="1.500000" cy="5.000000" r="1.500000" fill="#FFFFFF" fillOpacity="0"/>
+	<circle cx="1.500000" cy="5.000000" r="1.250000" stroke="#B4B4B4" strokeOpacity="1.000000" strokeWidth="0.500000"/>
+	<path d="M5.5 18.5C5.5 18.78 5.71 19 6 19C6.28 19 6.5 18.78 6.5 18.5L6.5 15.5L5.5 15.5L5.5 18.5Z" fill="#B4B4B4" fillOpacity="1.000000" fillRule="evenodd"/>
+	<path d="M6.75 12.5L5.25 12.5" stroke="#B4B4B4" strokeOpacity="1.000000" strokeWidth="1.000000"/>
+	<path d="M6 15.5L6.75 15.5L5.25 15.5" stroke="#B4B4B4" strokeOpacity="1.000000" strokeWidth="1.000000"/>
+	<path d="M5.5 0.5L5.5 12.5L6.5 12.5L6.5 0.5C6.5 0.22 6.28 0 6 0C5.71 0 5.5 0.22 5.5 0.5Z" fill="#B4B4B4" fillOpacity="1.000000" fillRule="evenodd"/>
+	<circle r="1.500000" transform="matrix(-1 0 0 -1 6 14)" fill="#FFFFFF" fillOpacity="0"/>
+	<circle r="1.250000" transform="matrix(-1 0 0 -1 6 14)" stroke="#B4B4B4" strokeOpacity="1.000000" strokeWidth="0.500000"/>
+	<path d="M11 0.5C11 0.22 10.78 0 10.5 0C10.22 0 10 0.22 10 0.5L10 3.5L11 3.5L11 0.5Z" fill="#B4B4B4" fillOpacity="1.000000" fillRule="evenodd"/>
+	<path d="M9.75 6.5L11.25 6.5" stroke="#B4B4B4" strokeOpacity="1.000000" strokeWidth="1.000000"/>
+	<path d="M10.5 3.5L9.75 3.5L11.25 3.5" stroke="#B4B4B4" strokeOpacity="1.000000" strokeWidth="1.000000"/>
+	<path d="M11 18.5L11 6.5L10 6.5L10 18.5C10 18.78 10.22 19 10.5 19C10.78 19 11 18.78 11 18.5Z" fill="#B4B4B4" fillOpacity="1.000000" fillRule="evenodd"/>
+	<circle cx="10.500000" cy="5.000000" r="1.500000" fill="#FFFFFF" fillOpacity="0"/>
+	<circle cx="10.500000" cy="5.000000" r="1.250000" stroke="#B4B4B4" strokeOpacity="1.000000" strokeWidth="0.500000"/>
+</svg>

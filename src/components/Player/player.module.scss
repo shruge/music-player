@@ -1,0 +1,172 @@
+@use '../../styles/mixins' as *;
+
+.player {
+    @include maxWidth(1920px, 1);
+    max-height: 120px;
+    background: #000;
+    padding: 0 toRem(30) toRem(20) toRem(60);
+    @include flex(vertical);
+    justify-content: space-between;
+
+    &__widget {
+        color: #fff;
+        @include maxWidth(140px, 0);
+        position: relative;
+        top: toRem(-40);
+    }
+    
+    &__img {
+        max-width: 111px;
+        border-radius: 10px;
+    }
+
+    &__song,
+    &__artist {
+        font-weight: 300;
+        white-space: nowrap;
+        font-family: "Jura-Light";
+    }
+
+    &__song {
+        overflow: hidden;
+        font-size: toRem(15);
+        margin: toRem(9) 0 toRem(7);
+    }
+
+    &__artist {
+        font-size: toRem(13);
+        color: #dedede
+    }
+
+    &__controls {
+        @include maxWidth(120px, 0);
+        @include flex(column);
+        gap: toRem(15);
+
+        &_main {
+            @include maxWidth(1000px, 0);
+            position: relative;
+            top: toRem(-10);
+            @include flex(column);
+            gap: toRem(25);
+        }
+    }
+
+    &__btns {
+        @include maxWidth(400px, 0);
+        padding: 0 toRem(55);
+        @include flex(vertical);
+        gap: toRem(5);
+        background: #000;
+        border-radius: 50px;
+        justify-content: space-between;
+    }
+
+    &__trackbar {
+        width: 100%;
+        @include flex(vertical);
+        gap: toRem(5);
+        justify-content: space-between;
+    }
+
+    &__wrapper-btn {
+        @include maxWidth(110px, 0);
+        border-radius: 50%;
+        @include flex(center);
+        box-shadow: 0 0 0 toRem(25) #000;
+    }
+
+    &__btn {
+        padding: toRem(20) 0 0;
+
+        &_play-pause {
+            @include maxWidth(70px, 0);
+            border-radius: 50%;
+            padding: toRem(22.02) 0;
+            background: #5EA694;
+            @include flex(column);
+        }
+
+        &_next {
+            padding: 0 0 toRem(20);
+        }
+    }
+    
+    &__progressbar {
+        width: 100%;
+    }
+
+    &__icons {
+        @include maxWidth(170px, 0);
+        position: relative;
+        top: toRem(10);
+        @include flex(vertical);
+        gap: toRem(5);
+        justify-content: space-between;
+    }
+
+    &__volume {
+        @include maxWidth(95px, 0);
+        @include flex(vertical);
+        gap: toRem(5);
+        justify-content: space-between;
+
+        &-range {
+            max-width: 70px;
+        }
+    }
+
+    &__icon {
+        cursor: pointer;
+        
+        &_stroke,
+        &_fill {
+            transition: all ease .3s;
+        }
+
+        &:hover {
+            .player__icon_stroke {
+                stroke: #5EA694;
+            }
+
+            .player__icon_fill {
+                fill: #5EA694;
+            }
+        }
+    }
+
+    &__mode {
+        @include maxWidth(90px, 0);
+        @include flex(vertical);
+        gap: toRem(10);
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1480px) {
+    .player {
+        &__song {
+            font-size: toRem(13);
+        }
+
+        &__artist {
+            font-size: toRem(11.5);
+        }
+
+        .player__img {
+            width: toRem(91);
+            height: toRem(91);
+        }
+
+        &__progressbar {
+            &::-webkit-slider-runnable-track {
+                height: toRem(5);
+            }
+    
+            &::-webkit-slider-thumb {
+                @include box(toRem(10));
+                margin: toRem(-5.5) 0 0;
+            }
+        }
+    }
+}

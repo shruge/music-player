@@ -1,0 +1,12 @@
+<svg width="16.000000" height="16.000000" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+	<clipPath>
+		<rect  width="16.000000" height="16.000000" fill="white" fillOpacity="0"/>
+	</clipPath>
+	<g clip-path="url(#clip146_382)">
+		<path id="Vector" d="M10 1.99C10 1.6 9.76 1.24 9.4 1.08C9.05 0.92 8.62 0.99 8.33 1.25L4.11 4.99L2 4.99C0.89 4.99 0 5.89 0 6.99L0 8.99C0 10.1 0.89 10.99 2 10.99L4.11 10.99L8.33 14.74C8.62 15 9.05 15.07 9.4 14.91C9.76 14.74 10 14.39 10 13.99L10 1.99Z" fill="#000000" fillOpacity="1.000000" fillRule="evenodd"/>
+		<rect id="Rectangle 12" x="15.493164" y="6.000000" rx="0.494009" width="0.988018" height="4.940087" transform="rotate(45.0003 15.493164 6.000000)" fill="#D9D9D9" fillOpacity="1.000000"/>
+		<rect id="Rectangle 12" x="15.493164" y="6.707092" rx="-0.005991" width="-0.011982" height="3.940087" transform="rotate(45.0003 15.493164 6.707092)" stroke="#000000" stroke-opacity="1.000000" strokeWidth="1.000000"/>
+		<rect id="Rectangle 13" x="12.000000" y="6.698792" rx="0.494009" width="0.988018" height="4.940087" transform="rotate(-45.0003 12.000000 6.698792)" fill="#D9D9D9" fillOpacity="1.000000"/>
+		<rect id="Rectangle 13" x="12.707031" y="6.698792" rx="-0.005991" width="-0.011982" height="3.940087" transform="rotate(-45.0003 12.707031 6.698792)" stroke="#000000" stroke-opacity="1.000000" strokeWidth="1.000000"/>
+	</g>
+</svg>

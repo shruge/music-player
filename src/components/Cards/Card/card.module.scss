@@ -1,0 +1,96 @@
+@use '../../../styles/mixins' as *;
+
+.card {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 19px;
+    position: relative;
+    
+    &__img {
+        border-radius: 20px;
+    }
+
+    &:hover {
+        .card__img {
+            pointer-events: none;
+        }
+
+        .card__content {
+            transform: translate(0, 0);
+        }
+    }
+    
+    &__content {
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        transition: all ease-in-out .4s;
+        font-family: 'Jura-Regular';
+        transform: translate(0, -100%);
+        background: rgba(0, 0, 0, 0.8);
+        padding: toRem(70) 0.4rem toRem(33);
+    }
+
+    &__available {
+        font-weight: 400;
+        font-size: toRem(15);
+    }
+
+    &__genre {
+        margin: toRem(12) 0 0;
+        font-size: toRem(13);
+    }
+
+    &__editor {
+        font-size: toRem(14);
+        transition: all linear .3s;
+        margin: toRem(24) 0 toRem(21);
+        
+        &:hover {
+            text-shadow: 0 0 4px rgba(255, 255, 255, 0.9);
+        }
+    }
+
+    &__artist {
+        font-size: 1rem;
+    }
+
+    &__link {
+        position: relative;
+
+        &::before,
+        &::after {
+            content: '';
+            @include pseudo(0%, 1px);
+            bottom: toRem(-5);
+            background: #fff;
+            transition: all ease .3s;
+        }
+
+        &::before {
+            left: 0;
+        }
+
+        &::after {
+            right: 0;
+        }
+
+        &:hover {
+            &::before,
+            &::after {
+                width: 50.5%;
+            }
+        }
+        
+        &:active {
+            &::before,
+            &::after {
+                width: 0%;
+            }
+        }
+    }
+}

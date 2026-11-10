@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url(../assets/fonts/Inter-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Jura-Regular';
+  src: url(../assets/fonts/Jura-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Jura-Light';
+  src: url(../assets/fonts/Jura-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Baskervville-Regular';
+  src: url(../assets/fonts/Baskervville-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Livvic-Regular';
+  src: url(../assets/fonts/Livvic-Regular.ttf);
+  font-weight: 400;
+}
+
+:root {
+  background: rgb(30, 30, 30);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  min-width: 290px;
+  max-width: 1920px;
+  box-shadow: inset 0 6.25rem 12.5rem 12.5rem rgba(0, 0, 0, 0.7);
+}
+

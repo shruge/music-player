@@ -1,0 +1,109 @@
+@use '../../styles/mixins' as *;
+
+.cards {
+    @include maxWidth(820px, 1);
+    overflow: hidden;
+    @include flex(column);
+
+    &__title {
+        margin: 0 0 toRem(50);
+    }
+
+    &__nav {
+        height: 100%;
+        color: #fff;
+        align-self: end;
+        position: relative;
+        font-family: 'Jura-Regular';
+        @include maxWidth(400px, 0);
+    }
+
+    &__list {
+        width: 100%;
+        @include flex(vertical);
+        gap: toRem(5);
+        justify-content: space-between;
+
+    }
+ 
+    &__filter {
+        opacity: 0;
+        border-radius: 5px;
+        margin: toRem(10) 0 0;
+        background: #141313;
+        transition: all ease .3s;
+        padding: toRem(17) toRem(23);
+        transform: translate(100%, 0);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.8);
+
+        &_active {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    }
+
+    &__li {
+        white-space: nowrap;
+        cursor: pointer;
+        user-select: none;
+        @include flex(center);
+        gap: toRem(5);
+        transition: all ease .3s;
+
+        &:hover {
+            color: #53E4C0;
+
+            .cards__icon {
+                &_fill {
+                    fill: #53E4C0;
+                }
+
+                &_stroke {
+                    stroke: #53E4C0;
+                }
+            }
+        }
+
+        &:active {
+            color: #5EA694;
+
+            .cards__icon {
+                &_fill {
+                    fill: #5EA694;
+                }
+
+                &_stroke {
+                    stroke: #5EA694;
+                }
+            }
+        }
+    }
+    
+    &__icon {
+        &_fill {
+            transition: all ease .3s;
+        }
+
+        &_stroke {
+            transition: all ease .3s;
+        }
+
+        &_shuffle {
+            align-self: flex-end;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        padding: toRem(30) 0 0;
+        display: grid;
+        gap: toRem(70) toRem(20);
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(auto, 190px));
+    }
+}
+
+@media (max-width: 650px) {
+    .cards {
+    }
+}
